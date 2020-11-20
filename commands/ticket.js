@@ -2,7 +2,7 @@ const discord = require ("discord.js")
 
 module.exports.run = async(bot, message, args) => {
 
-    const catergoryID = "764406900858814466"
+    const catergoryID = "779306808396349441"
 
     var username = message.author.username;
     var userDiscriminator = message.author.discriminator;
@@ -25,7 +25,9 @@ module.exports.run = async(bot, message, args) => {
 
     var embed = new discord.MessageEmbed()
         .setTitle("Goededag " + message.author.username)
-        .setFooter("Ticket gemaakt");
+        .setFooter("Ticket gemaakt")
+        .setDescription(" © FDB • Datum")
+        .setTimestamp();
 
     message.channel.send(embed);
 
@@ -53,7 +55,7 @@ module.exports.run = async(bot, message, args) => {
                     var embedParent = new discord.MessageEmbed()
                     .setTitle(`Goededag ${message.author.username}`)
                     .setDescription("Bedankt voor uw Ticket, ons Staff-Team zal u zo snel mogelijk helpen. \n Stel uw vraag, en binnen 24 uur krijgt u een antwoord! \n Veel succes!")
-                    .setFooter(` © TeaNetwork • Datum`)
+                    .setFooter(` © FDB • Datum`)
                     .setColor("PURPLE")
                     .setTimestamp()
 
